@@ -1,0 +1,24 @@
+{
+    "name": "client",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "build:stage": "vite build --mode stage",
+        "build:qa": "vite build --mode qa",
+        "preview": "vite preview --port 4173",
+        
+        "pub:qa": "vite build --mode qa && cross-env scene=qa node ./build/index.js",
+        "pub:stage": "vite build --mode stage && cross-env scene=stage node ./build/index.js",
+        "pub:product": "vite build && cross-env scene=product node ./build/index.js"
+    },
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "vue": "^3.2.38",
+        "vue-router": "^4.1.5"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^3.0.3",
+        "vite": "^3.0.9"
+    }
+}

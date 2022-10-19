@@ -1,0 +1,15 @@
+{
+  "name": "deploy",
+  "version": "1.0.0",
+  "description": "远程构建部署",
+  "main": "deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "gitlab-webhook-handler": "^1.0.1"
+  }
+}
